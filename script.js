@@ -11,24 +11,6 @@ function quizGame(answer1) {
 }
 
 function askQuestion() { // Receive score as a parameter
-  const questions = [
-    {
-      question: "What is the tallest mountain in the world?",
-      options: ["Mount Kilimanjaro", "Mount Fuji", "Mount Everest", "Mount McKinley"],
-      correctAnswer: "Mount Everest"
-    },
-    {
-      question: "Which monument is located in New York and was a gift from France?",
-      options: ["Eiffel Tower", "Big Ben", "Statue of Liberty", "Colosseum"],
-      correctAnswer: "Statue of Liberty"
-    },
-    {
-      question: "Where is the Great Wall of China located?",
-      options: ["China", "India", "Egypt", "Australia"],
-      correctAnswer: "China"
-    },
-  ];
-
   for (let i = 0; i < questions.length; i++) {
     const currentQuestion = questions[i];
     console.log("Question ", (i + 1), ":", currentQuestion.question);
@@ -65,4 +47,23 @@ function calculateScore() { // Receive score as a parameter
 // Initial function call
 let score = 0; // Initialize score here
 const answer1 = prompt("Welcome to the quiz game. Do you wish to play this game? (yes/no): ");
+//set of questions
+const questions = [
+  {
+    question: "What is the tallest mountain in the world?",
+    options: ["Mount Kilimanjaro", "Mount Fuji", "Mount Everest", "Mount McKinley"],
+    correctAnswer: "Mount Everest"
+  },
+  {
+    question: "Which monument is located in New York and was a gift from France?",
+    options: ["Eiffel Tower", "Big Ben", "Statue of Liberty", "Colosseum"],
+    correctAnswer: "Statue of Liberty"
+  },
+  {
+    question: "Where is the Great Wall of China located?",
+    options: ["China", "India", "Egypt", "Australia"],
+    correctAnswer: "China"
+  },
+];
+
 quizGame(answer1);
