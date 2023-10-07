@@ -33,4 +33,3 @@ Once the game has started, here's how it works:
 5. The user's score is displayed, and they are asked if they want to play again. If they choose to play again, the game returns to step 3; otherwise, it ends.
 
 Enjoy playing the quiz game and testing your JavaScript knowledge!
-```
